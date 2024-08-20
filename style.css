@@ -69,6 +69,42 @@ body {
     height: 28px;
 }
 
+.Saludo{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px;
+}
+
+.Noob{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px; 
+}
+
+.V1{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px;  
+}
+
+.Loro{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px;
+}
+
+.Sebastian{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px;
+}
+
+.Aldeano{
+    margin-left: 0.2rem;
+    width: 40px;
+    height: 40px;
+}
+
 .mesopotamia{
     position: absolute;
     top: 50%;
