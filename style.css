@@ -34,7 +34,78 @@ body {
     font-size: 16px;
 }
 
-.navbar a:hover {
+.boton {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    z-index: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.boton:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .boton:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+.boton:hover {
     background-color: lightblue;
 }
 
@@ -68,6 +139,83 @@ body {
     width: 28px;
     height: 28px;
 }
+
+
+.completa{
+    width: 69rem;
+    height: 40rem;
+}
+
+.musica{
+    position: absolute; 
+    right: 1.5rem;
+    max-width: 9.25rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+  
+  .musica:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .musica:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
 
 .Saludo{
     margin-left: 0.2rem;
@@ -127,29 +275,14 @@ body {
     height: 28px;
 }
 
-.circle-icon2 {
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    color: #ebc12b;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.circle-icon3 {
-    position: absolute;
-    top: 50%;
-    right: 45px;
-    transform: translateY(-50%);
-    color: #37c54b;
-    font-size: 15px;
-    cursor: pointer;
-}
-
 .navbar2 {
     display: none;
 }
+
+@media screen and (min-width: 900px ) {
+    
+}
+
 
 @media only screen and (max-width: 768px) {
     .navbar2 {
@@ -166,9 +299,64 @@ body {
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        z-index: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
     }
+
+    .navbar2::before{
+        content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    }
+
+    .navbar2::after{
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
     .navbar2 a:hover {
-        background-color: #712c2f;
+        background-color: lightblue;
     }
     .navbar {
         display: none;
@@ -180,5 +368,9 @@ body {
         font-size: 14px;
         color: white;
         padding: 10px;
+    }
+
+    .musica{
+        
     }
 }
