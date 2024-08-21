@@ -18,8 +18,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
     button.appendChild(buttontext);
     body.appendChild(button);
 
+    let sonido = new Audio ("./imagenes/Y2meta.app-Calm Night __ Decaying winter soug new loop __.ogg");
+    let reproducir = false;
+
     document.getElementById("musica").addEventListener("click", (e) => {
-        let sonido = new Audio ("./imagenes/Y2meta.app-Calm Night __ Decaying winter soug new loop __.ogg");
-        sonido.play();
+
+        if (reproducir) {
+            reproducir = false;
+            sonido.pause();
+        } else {
+            reproducir = true;
+            sonido.play();
+        }
     })
 })
